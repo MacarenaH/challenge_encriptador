@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encriptador de Textos</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <img class="imagen_logo" src="/img/Logo.png" alt="Logo" />
+    </header>
+    <main class="contenedor__principal">
+      <section class="contenedor__principal__contenido">
+        <textarea
+          name="texto"
+          id="texto"
+          class="ingrese_texto"
+          cols="50"
+          rows="12"
+          placeholder="Ingrese tu texto aquí"
+        ></textarea>
+        <p class="contenedor__principal__contenido__aclaracion">
+          Solo letras minúsculas y sin acentos
+        </p>
+        <div class="principal__botones">
+          <button class="contenido__botones" id="contenido__botones__1">
+            Encriptar
+          </button>
+          <button class="contenido__botones" id="contenido__botones__2">
+            Desencriptar
+          </button>
+        </div>
+      </section>
+
+      <aside class="contenedor__principal__aside">
+        <!-- Reemplazar imagen con un div que contendrá el texto encriptado/desencriptado -->
+        <div id="resultadoTexto" style="display: none"></div>
+        <img
+          class="imagen_aside"
+          id="imagen_aside"
+          src="/img/Muñeco.png"
+          alt="imagen de muñeco"
+        />
+        <h4>Ningún mensaje fue encontrado</h4>
+        <p>Ingresa el texto que desees encriptar o desencriptar</p>
+        <button class="aside_boton" id="aside_boton">Copiar</button>
+      </aside>
+    </main>
+
+    <footer class="footer">
+      <p>Desarrollado por Macarena Hauad <time datetime="2024">2024</time></p>
+    </footer>
+
+    <!-- Conexión al archivo script.js -->
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
+
